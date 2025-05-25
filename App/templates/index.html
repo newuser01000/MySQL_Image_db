@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>遥感数据在线处理平台</title>
+    <link rel="stylesheet" href="../static/index.css">
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">-->
+
+</head>
+<body>
+    <div class="container">
+        <h1>遥感数据在线处理平台</h1>
+        <label >选择文件</label>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="uploadfile">
+            <button  onclick="loadnewpage()">加载</button>
+        </form>
+
+    </div>
+
+
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
